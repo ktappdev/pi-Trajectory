@@ -6,7 +6,11 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    dependencies:
+      '@earendil-works/pi-coding-agent':
+        specifier: '*'
+        version: 0.84.2(ws@8.21.3)
 
   extensions:
     devDependencies:
