@@ -1,6 +1,6 @@
 {
   "name": "pi-trajectory",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "type": "module",
   "description": "Trajectory For All — a browser-based inspection surface for pi coding agent sessions.",
@@ -24,7 +24,7 @@
     "extensions": [
       "./extensions/trajectory-prompt-log.ts"
     ],
-    "image": "https://raw.githubusercontent.com/ktappdev/pi-Trajectory/main/artifacts/trajectory-desktop.png"
+    "image": "https://raw.githubusercontent.com/ktappdev/pi-Trajectory/main/artifacts/trajectory-overview.jpg"
   },
   "files": [
     "extensions/trajectory-prompt-log.ts"
