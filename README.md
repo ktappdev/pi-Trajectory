@@ -1,6 +1,6 @@
 # Pi Trajectory
 
-A browser-based inspection surface for [pi](https://github.com/earendil-works/pi-mono) coding agent sessions. Browse every session you've ever run, then drill into turns, tool calls, outputs, usage, model changes, compactions, and prompt snapshots — all in a timing-aware visual ledger.
+A browser-based inspection surface for [pi](https://github.com/earendil-works/pi-mono) coding agent sessions, inspired by the Trajectory feature in [DeepSeek Harness](https://github.com/deepseek-ai/dsh). Browse every session you've ever run, then drill into turns, tool calls, outputs, usage, model changes, compactions, and prompt snapshots — all in a timing-aware visual ledger.
 
 Trajectory is **local-first, read-only, and replay-only**. It never sends data anywhere, never modifies session files, and never controls a running agent. It reads the JSONL files pi already writes to `~/.pi/agent/sessions/` and projects them into an interactive timeline.
 
