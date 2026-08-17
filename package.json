@@ -1,0 +1,29 @@
+{
+  "name": "pi-trajectory",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Trajectory For All — a browser-based inspection surface for pi coding agent sessions.",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "author": { "name": "Ken Taylor", "url": "https://github.com/ktappdev" },
+  "repository": { "type": "git", "url": "https://github.com/ktappdev/pi-Trajectory.git" },
+  "homepage": "https://github.com/ktappdev/pi-Trajectory",
+  "bugs": { "url": "https://github.com/ktappdev/pi-Trajectory/issues" },
+  "pi": {
+    "extensions": ["./extensions/trajectory-prompt-log.ts"]
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @pi-trajectory/server --filter @pi-trajectory/web dev",
+    "dev:web": "pnpm --filter @pi-trajectory/web dev",
+    "build": "pnpm --filter @pi-trajectory/web build",
+    "start": "pnpm --filter @pi-trajectory/server start",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm typecheck",
+    "test": "pnpm --filter @pi-trajectory/web test"
+  },
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=22.19"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+dist
+lib
+*.local
+.DS_Store
+.vite
+coverage
+artifacts
+*.pid
+/tmp
