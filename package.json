@@ -13,6 +13,10 @@
   "pi": {
     "extensions": ["./extensions/trajectory-prompt-log.ts"]
   },
+  "files": ["extensions/trajectory-prompt-log.ts"],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
   "scripts": {
     "dev": "pnpm --parallel --filter @pi-trajectory/server --filter @pi-trajectory/web dev",
     "dev:web": "pnpm --filter @pi-trajectory/web dev",

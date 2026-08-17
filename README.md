@@ -20,8 +20,9 @@ Open `http://127.0.0.1:5173`. You'll see every pi session across all your projec
 ## Install the extension
 
 The extension gives you a `/trajectory` slash command inside pi and logs prompt snapshots for the inspector:
-
 ```bash
+pi install npm:pi-trajectory
+# or from git:
 pi install git:github.com/ktappdev/pi-Trajectory
 ```
 
