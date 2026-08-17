@@ -86,6 +86,17 @@ Trajectory reads pi session JSONL files, parses them with pi's own `parseSession
 
 Replay intentionally leaves per-operation durations empty: pi session JSONL does not persist per-token timing. Live inspection is future work.
 
+## Contributing
+
+Found a bug, have a fix, or want to improve the inspector? Contributions are welcome.
+
+1. Fork the repository and create a focused branch.
+2. Make your change and add a small test when behavior changes.
+3. Run `pnpm typecheck`, `pnpm test`, and `pnpm build`.
+4. Open a pull request with what changed and how you verified it.
+
+Small fixes, UI improvements, documentation updates, and ideas are all useful. For larger changes, open an issue first so direction stays aligned.
+
 ## Privacy
 
 Trajectory is read-only and local. It does not:
