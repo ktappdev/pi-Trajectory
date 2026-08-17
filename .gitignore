@@ -5,6 +5,5 @@ lib
 .DS_Store
 .vite
 coverage
-artifacts
 *.pid
 /tmp

@@ -11,8 +11,8 @@
   "homepage": "https://github.com/ktappdev/pi-Trajectory",
   "bugs": { "url": "https://github.com/ktappdev/pi-Trajectory/issues" },
   "pi": {
-    "extensions": ["./extensions/trajectory-prompt-log.ts"]
-  },
+    "extensions": ["./extensions/trajectory-prompt-log.ts"],
+    "image": "https://raw.githubusercontent.com/ktappdev/pi-Trajectory/main/artifacts/trajectory-desktop.png"
   "files": ["extensions/trajectory-prompt-log.ts"],
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"

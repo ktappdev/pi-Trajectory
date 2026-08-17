@@ -6,20 +6,10 @@ Trajectory is **local-first, read-only, and replay-only**. It never sends data a
 
 ---
 
-## Quick start
-
-```bash
-git clone git@github.com:ktappdev/pi-Trajectory.git
-cd pi-Trajectory
-pnpm install
-pnpm dev
-```
-
-Open `http://127.0.0.1:5173`. You'll see every pi session across all your projects, newest first. Click any session to open its trajectory.
-
 ## Install the extension
 
 The extension gives you a `/trajectory` slash command inside pi and logs prompt snapshots for the inspector:
+
 ```bash
 pi install npm:pi-trajectory
 # or from git:
@@ -33,14 +23,19 @@ Reload pi. Then inside any session:
 /trajectory <id>      # open a specific session by id or uuid prefix
 ```
 
-The command opens your browser to the session's trajectory page. **Start the server first** from the repo:
+The command opens your browser to the session's trajectory page.
 
-```bash
-pnpm dev    # development (Vite + API on 127.0.0.1)
-pnpm start  # production (built UI + API on 127.0.0.1:8787)
-```
-
-If the server isn't running, the command tells you how to start it. Set `PI_TRAJECTORY_PORT` to override the default port (8787).
+> **The inspector needs a server.** The extension is just the slash command + prompt logger. The visual inspector (server + web UI) runs separately — clone this repo and start it:
+>
+> ```bash
+> git clone git@github.com:ktappdev/pi-Trajectory.git
+> cd pi-Trajectory
+> pnpm install
+> pnpm dev    # development (Vite + API on 127.0.0.1)
+> # or: pnpm start  (production, built UI + API on 127.0.0.1:8787)
+> ```
+>
+> If the server isn't running, the `/trajectory` command tells you how to start it. Set `PI_TRAJECTORY_PORT` to override the default port (8787).
 
 ---
 
