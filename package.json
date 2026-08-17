@@ -1,19 +1,34 @@
 {
   "name": "pi-trajectory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "description": "Trajectory For All — a browser-based inspection surface for pi coding agent sessions.",
-  "keywords": ["pi-package"],
+  "keywords": [
+    "pi-package"
+  ],
   "license": "MIT",
-  "author": { "name": "Ken Taylor", "url": "https://github.com/ktappdev" },
-  "repository": { "type": "git", "url": "https://github.com/ktappdev/pi-Trajectory.git" },
+  "author": {
+    "name": "Ken Taylor",
+    "url": "https://github.com/ktappdev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktappdev/pi-Trajectory.git"
+  },
   "homepage": "https://github.com/ktappdev/pi-Trajectory",
-  "bugs": { "url": "https://github.com/ktappdev/pi-Trajectory/issues" },
+  "bugs": {
+    "url": "https://github.com/ktappdev/pi-Trajectory/issues"
+  },
   "pi": {
-    "extensions": ["./extensions/trajectory-prompt-log.ts"],
+    "extensions": [
+      "./extensions/trajectory-prompt-log.ts"
+    ],
     "image": "https://raw.githubusercontent.com/ktappdev/pi-Trajectory/main/artifacts/trajectory-desktop.png"
-  "files": ["extensions/trajectory-prompt-log.ts"],
+  },
+  "files": [
+    "extensions/trajectory-prompt-log.ts"
+  ],
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"
   },
