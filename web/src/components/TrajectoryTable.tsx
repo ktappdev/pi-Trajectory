@@ -1,7 +1,7 @@
 import { useMemo, useRef } from 'react'
 import { useVirtualizer } from '@tanstack/react-virtual'
 import type { TrajectoryRecord } from '@pi-trajectory/shared'
-import { kindLabel, recordTone } from '../lib/record.ts'
+import { kindLabel, recordTone, systemRecordLabel } from '../lib/record.ts'
 import { estimateVirtualRowSize, groupTrajectoryVirtualRows } from '../lib/virtual-rows.ts'
 import { Icon } from './Icon.tsx'
 
@@ -35,7 +35,7 @@ function RecordRow({ record, selected, focused, collapsed, onSelect, onToggleAss
   return <div role="option" aria-selected={selected} className={`trace-row tone-${recordTone(record)}${selected ? ' is-selected' : ''}${focused ? '' : ' is-muted'}`} onClick={() => onSelect(record.recordId)}>
     <span className="trace-kind">{kindLabel(record.kind)}</span>
     <span className="trace-index">{record.turn ?? '—'}.{record.step}</span>
-    <span className="trace-summary">{record.summary}</span>
+    <span className="trace-summary">{record.kind === 'system' ? systemRecordLabel(record) : record.summary}</span>
     <span className="trace-request">{record.requestNumber === undefined ? '' : `R${record.requestNumber}`}</span>
     {canCollapse ? <button className="row-fold" type="button" title="Fold or unfold tool calls" aria-label="Fold or unfold tool calls" aria-pressed={collapsed} onClick={(event) => { event.stopPropagation(); onToggleAssistant(record.requestNumber!) }}><Icon name={collapsed ? 'chevron' : 'fold'} size={14} /></button> : <span className="row-fold" />}
   </div>
